@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisActivity">
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logomain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="136dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/bangers_regular"
+        android:text="HL Sport"
+        android:transitionName="logo_text"
+        android:textColor="@color/my_color"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/averta_bold"
+        android:text="Đăng ký tài khoản"
+        android:textColor="@color/my_color"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle"
+        tools:text="Đăng ký tài khoản" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/averta_regular"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="Họ tên"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:fontFamily="@font/averta_regular"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:ems="10"
+        android:fontFamily="@font/averta_regular"
+        android:hint="Mật Khẩu"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:ems="10"
+        android:fontFamily="@font/averta_regular"
+        android:hint="Địa chỉ "
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <Spinner
+        android:id="@+id/spnGender"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddress" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:drawableLeft="@drawable/ic_dt"
+        android:ems="10"
+        android:fontFamily="@font/averta_regular"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnGender" />
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="@font/averta_regular"
+        android:text="Đăng Ký"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/my_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhone"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

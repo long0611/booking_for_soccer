@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SanDetailActivity">
+
+    <ImageView
+        android:id="@+id/imgSanDetail"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/san1"
+        />
+
+    <LinearLayout
+        android:background="@drawable/borderbottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imgSan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnDatSan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/averta_regular"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/booking"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Đặt sân"
+            android:textAllCaps="false"
+            android:textColor="@color/my_color"></Button>
+
+        <Button
+            android:id="@+id/btnVitri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/averta_regular"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_vitri"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Vị trí"
+            android:textAllCaps="false"
+            android:textColor="@color/my_color"></Button>
+
+        <Button
+            android:id="@+id/btnChiaSe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/averta_regular"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_chiase"
+            android:gravity="center"
+            android:text="Chia sẻ"
+            android:textAllCaps="false"
+            android:textColor="@color/my_color"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/borderbottom"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Việt Hàn"
+                android:fontFamily="@font/averta_regular"
+                android:textStyle="bold"
+                android:textColor="#019ade"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/tvTinhtrang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sân Vắng"
+                android:fontFamily="@font/averta_regular"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/ic_consan"
+                android:textColor="@color/my_color"
+                android:textSize="19sp" />
+            <TextView
+                android:id="@+id/tvTinhtrang2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đang thuê"
+                android:fontFamily="@font/averta_regular"
+                android:textAlignment="textStart"
+                android:drawableLeft="@drawable/ic_error"
+                android:textColor="#AE0B0B"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddressDetail"
+            android:drawableLeft="@drawable/ic_vitriii"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:fontFamily="@font/averta_regular"
+            android:textSize="15sp"
+            android:textColor="#019ade"
+            />
+        <TextView
+            android:id="@+id/tvPhone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textSize="15dp"
+            android:fontFamily="@font/averta_regular"
+            android:textColor="#019ade"
+            />
+
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/ic_price"
+            android:text="Giá"
+            android:fontFamily="@font/averta_regular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#019ade"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logomain"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-600dp"
+        android:drawableLeft="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

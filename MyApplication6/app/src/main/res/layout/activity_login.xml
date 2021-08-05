@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myContraint"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/logomain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="136dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/bangers_regular"
+        android:text="HL Sport"
+        android:transitionName="logo_text"
+        android:textColor="@color/my_color"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="176dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="148dp"
+        android:fontFamily="@font/averta_regular"
+        android:text="Đăng nhập"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/my_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDangKy"
+        app:layout_constraintVertical_bias="0.225"
+        app:strokeColor="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/averta_bold"
+        android:text="Đăng nhập"
+        android:textColor="@color/my_color"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle" />
+
+    <EditText
+
+        android:id="@+id/edt_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/averta_regular"
+        android:layout_marginEnd="75dp"
+        android:drawableLeft="@drawable/icon_user"
+        android:ems="0"
+        android:hint=" Tài khoản"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColorHint="#5E9A9E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/averta_regular"
+        android:drawableLeft="@drawable/icon_pass"
+        android:ems="10"
+        android:hint=" Mật khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#5E9A9E"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username" />
+
+
+    <TextView
+        android:id="@+id/tvDangKy"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="80dp"
+        android:text="Tạo Tài Khoản "
+        android:fontFamily="@font/averta_light"
+        android:textAlignment="textEnd"
+        android:textColor="@color/my_color"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

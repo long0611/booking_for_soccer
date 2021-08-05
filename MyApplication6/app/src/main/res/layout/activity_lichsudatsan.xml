@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LichSuDatSan"
+    android:orientation="vertical"
+    >
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/backLichSu"
+        android:drawableLeft="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/averta_regular"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:text="Lịch sử đặt sân"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_lichsu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wave_footer"
+        android:layout_below="@+id/wave_header"
+        />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave_footer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleY="-1"
+        android:layout_height="40dp"/>
+</RelativeLayout>
